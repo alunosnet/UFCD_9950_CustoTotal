@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function CalcularCusto()
+            {
+                //dados de input
+                let preco=document.getElementById("custo").value;
+                console.log(preco);
+                let quantidade=document.getElementById("quantidade").value;
+                //calcular
+                let custoPagar=preco * quantidade;
+                //mostrar resultado
+                let minhaDiv=document.getElementById("mostrar");
+                minhaDiv.innerText="Total a pagar "+custoPagar;
+            }
+            
+        </script>
+    </head>
+    <body>
+        Custo do produto:<input type="number" id="custo"/>
+        <br/>
+        Quantidade comprada:<input type="number" id="quantidade"/>
+        <br/>
+        <button onclick="CalcularCusto()">Calcular o custo total</button>
+        <br/>
+        <div id="mostrar"></div>
+    </body>
+</html>
